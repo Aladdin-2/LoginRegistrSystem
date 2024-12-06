@@ -86,17 +86,17 @@ public class UserService {
     }
 
 
-    public User getUserDetails() {
+    public void getUserDetails() {
         System.out.println("Your username!");
         String userName = scan.nextLine();
         if (!userRepository.getUsers().isEmpty()) {
             for (User user : userRepository.getUsers()) {
                 if (user.getUserName().equals(userName)) {
-                    return user;
+                    System.out.println(user);
                 }
             }
         }
-        return null;
+        System.out.println("this user is not on the list!");
     }
 
 
