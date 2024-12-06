@@ -152,13 +152,5 @@ public class UserService {
         }
     }
 
-    public static void main(String[] args) throws InterruptedException {
-        UserRepository userRepository1 = new UserRepository();
-        UserService userService = new UserService(userRepository1);
-
-        // userService.registeredUser();
-        //    userService.showUsers();
-        userService.loginUser();
-    }
 
 }
